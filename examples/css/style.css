@@ -1,0 +1,105 @@
+h1{
+	color:blue;
+	text-align:center;
+	font-weight:bold;
+}
+
+h2{
+	color:red;
+	text-align:center;
+	font-weight:bold;
+}
+
+.second_drop{
+	background-color:gray;
+	
+}
+
+.second_drop_button{
+	background-color:gray;
+	color:blue;
+	width:auto;
+	cursor:pointer;
+
+}
+.second_drop_button:hover{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+.span3{
+	color:yellow;
+	font-size:2em;
+	padding-left:10px;
+	border:3px solid black;
+}
+
+#menu-3{
+	float:left;
+	
+}
+#menu-4{
+	float:left;
+	
+}
+.multiple-menu-container{
+	position:relative;
+}
+.img-drop{
+	width:200px;
+}
+.menu-4-button{
+	width:30px;
+}
+.multiple-menu-container{
+	clear:both;
+}
+.inner-menu-container{
+	position:relative;
+}
+#menu-5{
+	float:left
+}
+#menu-6{
+	float:left;
+}
+.menu-6-button{
+	width:100px;
+}
+.span5{
+	background-color:white;
+	position:absolute;
+	left:0;
+}
+.img-drop6{
+	position:absolute;
+}
+#tutoria-menu{
+	clear:both;
+}
+.tutorial{
+	color:blue;
+	cursor:pointer;
+	
+}
+.tutorial:hover{
+	animation-name:tutorial-anim;
+	animation-duration:1s;
+	color:yellow;
+	background-color:gray;
+}
+.warning{
+	color:red;
+	font-weight:bold;
+}
+@keyframes tutorial-anim{
+	0%{
+		color:blue;
+		background-color:white;
+	}
+	100%{
+		color:yellow;
+		background-color:gray;
+	}
+}

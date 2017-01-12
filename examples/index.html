@@ -1,0 +1,168 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>simpleDrop example</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src='lib/simpledrop-v0.0.1.js'></script>
+</head>
+<body>
+<h1>simpleDrop Examples</h1>
+<h2>Created by callibrator</h2>
+<div>
+	<div id='first_drop_menu'>
+		<div class='toggle-button'>What is simple Drop? <-- click me to learn</div>
+		<div class='drop-toggle'>
+			<div>simpleDrop is a simple javascript library which can be used to create drop Down menus/divs etc.</div>
+			<div>The pros for this lib is that it does not depend on any other library such as Jquery or Boostrap</div>
+			
+			<div id='second_drop_menu' class='second_drop'>
+				<span class='toggle-button second_drop_button'>Making it really easy to be used for:</span>
+				<ul class='blue drop-toggle'>
+					<li>Big project in which you do not want to import any more libraries...</li>
+					<li>Projects which you do not want to heavily edit the html.</li>
+					<li>well...</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+	<div>
+	As you can see... it is very easy to create multiple drop-down menus...
+	It is totally optional to use css...
+	let's see some more examples.
+	<div>
+		<div id='menu-3'>
+			<input type='button' class='menu-3-button toggle-button' value="menu 3">
+			<span class='drop-toggle span3'>
+				You can use whatever HTML elements you wan't
+			</span>
+		
+		</div>
+		
+		<div id='menu-4'>
+			<img src='test1.jpg' class='menu-4-button toggle-button'>
+			<img src='test1.jpg' class='drop-toggle img-drop'>
+		
+		</div>
+	</div>
+	<div class='multiple-menu-container'>
+	These are the same menus as the previous ones, but with different css.
+	<div class='inner-menu-container'>
+		<div id='menu-5'>
+			<input type='button' class='menu-5-button toggle-button' value="menu 3">
+			<span class='drop-toggle span5'>
+				Some Random data
+			</span>
+		
+		</div>
+		
+		<div id='menu-6'>
+			<img src='test1.jpg' class='menu-6-button toggle-button'>
+			<img src='test1.jpg' class='drop-toggle img-drop6'>
+		
+		</div>
+	</div>
+	
+	</div>
+	
+	</div>
+	<div id='tutoria-menu'>
+		<div class='tutorial toggle-button'>How can I use it?</div>
+		<div class='drop-toggle tutorial-info'>
+			<div>It is really simple to install and use it on your website...</div>
+			<div>You can follow the following steps</div>
+			<ol>
+				<li>Download the file</li>
+				<li>Add the script to the header of your html page (eg&lt;script src='myScripts/simpledrop-v0.0.1.js'&gt;&lt;/script&gt;)</li>
+				<li>Add your html menu code. (See below code examples)</li>
+				<li>Add your js code (see below code examples)</li>
+				<li>Voila. Enjoy your drop down menu-text or whatever you want</li>
+			</ol>
+		
+		</div>
+		
+		
+	</div>
+	<div id='tutoria-menu2'>
+		<div class='tutorial toggle-button'>Why doesn't it work? (common mistakes)</div>
+		<div class='drop-toggle tutorial-info'>
+			<div>Everyone make mistakes...</div>
+			<div>An ancient legend says that I made some of the following mistakes when I was creating the script :D</div>
+			<ol>
+				<li>Forgot to add simpleDrop.create("menuIdHere") on my script...</li>
+				<li>Wrong path on html header file</li>
+				<li>Forgot to add toggle-button and/or drop-toggle</li>
+				<li>Forgot to set the right permissions on my files</li>
+
+			</ol>
+			<div>Those mistakes can even happen to experienced programmers (Especially when it is really late... and they are tired because they are writing a library in javascript)</div>
+		</div>
+		
+		
+	</div>
+	<div id='tutoria-menu3'>
+		<div class='tutorial toggle-button'>Code Examples</div>
+		<div class='drop-toggle tutorial-info'>
+			well if you press control+u on firefox you can see the code of this page...
+			In case you are bored to do that the following is a very simple example.
+				<div id='codeExample'>
+					<div class='You-can-add-your-class-here toggle-button you-can-also-add-your-class-here'>This is the button that the user clicks in order to reveal or hide the content! The toggle-button class is required. you can add more classes before and/or after it.</div>
+					<div class='You-can-add-your-class-here drop-toggle you-can-also-add-your-class-here'>This is the content the user will se when he clicks the above button. The drop-toggle class is required for this to work... you can add more classes before and/or after it</div>
+				</div>
+
+<br>
+You need to add the script on your page header file. For example:
+<br>
+<pre>
+&lt;script src='lib/simpledrop-v0.0.1.js' &gt;&lt;/script&gt;
+</pre>
+<br>
+The following is an html file example
+			<pre>
+
+&lt;div id='codeExample'&gt; 
+	&lt;div class='You-can-add-your-class-here toggle-button you-can-also-add-your-class-here'&gt;
+		This is the button that the user clicks to reveal or hide the content! The toggle-button class is required. you can add more classes before and/or after it.
+	&lt;/div&gt; 
+	&lt;div class='You-can-add-your-class-here drop-toggle you-can-also-add-your-class-here'&gt;
+		This is the content the the user will se when he click the button. the drop-toggle class is required for this to work... you can add more classes before and/or after it
+	&lt;/div&gt; 
+&lt;/div&gt; 
+&lt;script&gt; 
+	simpleDrop.create(&quot;codeExample&quot;)
+	/*
+	Be carefull here... you are using the id of the menu...
+	This is the only reason that the id is required.
+	*/ 
+&lt;/script&gt;
+
+			
+			</pre>
+		</div>
+		
+		
+	</div>
+
+
+</div>
+
+</body>
+<script src='scripts/brainScript.js'></script>
+
+
+<script>
+simpleDrop.create("codeExample")
+
+</script>
+<br>
+<span class='warning'>
+Important: Do not use absolute url of this site to import the lib on your header page. The url will change soon.
+</span>
+
+
+
+</html>
